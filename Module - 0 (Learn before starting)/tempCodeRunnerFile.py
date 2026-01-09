@@ -1,3 +1,4 @@
-with open('25(1). name.txt', 'r') as f:
-  content = f.read()
-  print(content)
+if file_path.exists():
+    print("File exists")
+print(os.path.abspath('name.txt'))
+print(os.path.getsize('name.txt'))
