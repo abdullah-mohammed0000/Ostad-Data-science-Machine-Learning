@@ -1,0 +1,38 @@
+donuts  = ["glazed", "Chocolate", "Sprinkle", "Net"]
+
+for item in donuts:
+    print(item)
+
+angle = 0 
+while angle<90:
+    print(angle)
+    angle = angle + 30
+
+
+#Nested loop
+
+x =5
+
+while x<10:
+    print(x)
+    v = 5
+    while v>2:
+     print(v)
+     v = v - 1
+    x  = x + 1   
+    
+
+for i in range (5):
+   print(i)   
+
+
+for i in range (2,5):
+   print(i)   
+
+
+for i in range (2,10,2):
+   print(i, end = " ")     
+   
+
+for i in range (10,0,-1):
+   print(i)      
