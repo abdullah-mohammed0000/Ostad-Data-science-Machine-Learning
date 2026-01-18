@@ -61,8 +61,8 @@ print('\n')
 for index, bag in enumerate(Party_Bags):
     print(f"Bag {index} : ", bag)
     print(bag)
-    for item in bag:
-       print("Bag has: ",item)
+    for item1 in bag:
+       print("Bag has: ",item1)
 
 
 

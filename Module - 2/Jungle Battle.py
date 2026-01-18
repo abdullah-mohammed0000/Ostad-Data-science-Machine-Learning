@@ -11,7 +11,7 @@ jungle_set2 = {'apple', 'grape', 'kiwi'}
 
 # Union (|) – “All fruits, all friends!”
 
-print(jungle_set1 | jungle_set2)  # {'banana', 'apple', 'mango', 'grape', 'kiwi'}
+print(jungle_set1 | jungle_set2)  # {'banana', 'apple', 'mango', 'grape', 'kiwi', ""}
 
 
 
