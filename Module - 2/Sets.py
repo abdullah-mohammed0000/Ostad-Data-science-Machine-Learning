@@ -1,139 +1,60 @@
-# Set Items
-# Set items are unordered, unchangeable, and do not allow duplicate values.
-
-# Unordered
-# Unordered means that the items in a set do not have a defined order.
-
-# Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
-
-# Unchangeable
-# Set items are unchangeable, meaning that we cannot change the items after the set has been created.
-
-
-
-# Duplicate values will be ignored:
-
 thisset = {"apple", "banana", "cherry", "apple"}
+print(thisset)
 
+thisset = {"apple", "banana", "cherry", "apple",1,2,True}
 print(thisset)
 
 
-# True and 1 is considered the same value:
-
-thisset = {"apple", "banana", "cherry", True, 1, 2}
-
-print(thisset)
-
-
-# Add an item to a set, using the add() method:
-
-thisset = {"apple", "banana", "cherry"}
-
+#Adding
 thisset.add("orange")
-
 print(thisset)
 
+#updating
 
-# Add elements from tropical into thisset:
-
-thisset = {"apple", "banana", "cherry"}
-tropical = {"pineapple", "mango", "papaya"}
-
+thisset = {"a","banana", "cherry"}
+tropical = {"pine", "mango", "papaya"}
 thisset.update(tropical)
-
 print(thisset)
 
-
-# Add elements of a list to at set:
-
-thisset = {"apple", "banana", "cherry"}
-mylist = ["kiwi", "orange"]
-
+mylist = ["Kiwi", "Orange"]
 thisset.update(mylist)
-
 print(thisset)
 
 
-# Remove "banana" by using the remove() method:
-
-thisset = {"apple", "banana", "cherry"}
-
+#Removing
 thisset.remove("banana")
-
 print(thisset)
 
-
-# Remove "banana" by using the discard() method:
-
-thisset = {"apple", "banana", "cherry"}
-
-thisset.discard("banana")
-
+thisset.discard("Kiwi")
 print(thisset)
-
-
-# Remove a random item by using the pop() method:
-
-thisset = {"apple", "banana", "cherry"}
 
 x = thisset.pop()
-
 print(x)
-
 print(thisset)
 
-
-
-# The clear() method empties the set:
-
-thisset = {"apple", "banana", "cherry"}
-
-thisset.clear()
-
+x = thisset.pop()
+print(x)
 print(thisset)
 
+#Clear
 
-# Join set1 and set2 into a new set:
+MissSet = {"Gayle",1,2,3,5,"Hayden"}
+print(MissSet)
+MissSet.clear()
+print(MissSet)
 
-set1 = {"a", "b", "c"}
-set2 = {1, 2, 3}
+
+#Union, Intersection, "Difference"
+
+set1 = {"a","b","c",1,2,8}
+set2 = {1,2,3,4,5}
 
 set3 = set1.union(set2)
 print(set3)
 
-
-# Join a set with a tuple:
-
-x = {"a", "b", "c"}
-y = (1, 2, 3)
-
-z = x.union(y)
-print(z)
+set4 = set1.intersection(set2)
+print(set4)
 
 
-# The update() method inserts the items in set2 into set1:
-
-set1 = {"a", "b" , "c"}
-set2 = {1, 2, 3}
-
-set1.update(set2)
-print(set1)
-
-
-# Join set1 and set2, but keep only the duplicates:
-
-set1 = {"apple", "banana", "cherry"}
-set2 = {"google", "microsoft", "apple"}
-
-set3 = set1.intersection(set2)
-print(set3)
-
-
-# Keep all items from set1 that are not in set2:
-
-set1 = {"apple", "banana", "cherry"}
-set2 = {"google", "microsoft", "apple"}
-
-set3 = set1.difference(set2)
-
-print(set3)
+set5 = set1.difference(set2)
+print(set5)
