@@ -56,5 +56,7 @@ set4 = set1.intersection(set2)
 print(set4)
 
 
+
 set5 = set1.difference(set2)
 print(set5)
+
